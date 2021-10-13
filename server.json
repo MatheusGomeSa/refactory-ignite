@@ -23,6 +23,14 @@
       "price": "25.90",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://i2.wp.com/supermercadostiaozinho.com.br/wp-content/uploads/2017/01/IMAGEM-EM-DESTAQUE-3.jpg?fit=500%2C300&ssl=1",
+      "name": "Strognoff",
+      "price": "10.99",
+      "description": "Comida brasileira feito com requeijão",
+      "available": true,
+      "id": 4
     }
   ]
 }

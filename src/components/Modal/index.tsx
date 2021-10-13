@@ -1,8 +1,16 @@
 import { Component } from 'react';
 import ReactModal from 'react-modal';
 
-class Modal extends Component {
-  constructor(props) {
+interface ModalProps {
+  isOpen : boolean;
+  setIsOpen: ()=> void;
+}
+interface ModalState {
+  modalStatus: boolean
+}
+
+class Modal extends Component<ModalProps, ModalState> {
+  constructor(props:ModalProps) {
     super(props);
 
     const { isOpen } = this.props;
@@ -11,7 +19,7 @@ class Modal extends Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps:ModalProps) {
     const { isOpen } = this.props;
 
     if (prevProps.isOpen !== isOpen) {
@@ -53,6 +61,6 @@ class Modal extends Component {
       </ReactModal>
     );
   }
-};
+}
 
 export default Modal;
